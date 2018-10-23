@@ -3,7 +3,7 @@
 
 ### Requirments: ([Ru](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/doc/SRS.md))
 ### UseCase diagram: ([Ru](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/diagrams/useCase1.md))
-### Activities diagram: ([Ru](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/diagrams/activity/activity.md))
+### Activity diagrams: ([Ru](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/diagrams/activity/activity.md))
 ### Sequence diagrams: ([Ru](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/diagrams/sequence/sequence1.md))
 
 
