@@ -1,7 +1,7 @@
 # Варианты использования
 ---
 
-![UseCase](https://github.com/kirillEvstrat/statisticsAppForBitrix24/new/master/diagrams/Usecase.png)
+![UseCase](https://github.com/kirillEvstrat/statisticsAppForBitrix24/diagrams/Usecase.png)
 
 # Содержание
 1 [Актёры](#1) <br>
