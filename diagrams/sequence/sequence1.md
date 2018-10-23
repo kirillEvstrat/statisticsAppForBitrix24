@@ -6,10 +6,10 @@
 
 
 ### 1. Войти в приложение<a name="1"></a>
-![Войти в приложение](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/diagrams/sequence/SequenceAuth.png)
+![Войти в приложение](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/diagrams/sequence/SuquenceAuth.png)
 
 ### 2 Загрузка статситики <a name="2"></a>
-![ВЗагрузка статситики](https://github.com/kirillEvstrat/statisticsAppForBitrix24/new/master/diagrams/sequence/SequenceLoad.png)
+![Загрузка статистики](https://github.com/kirillEvstrat/statisticsAppForBitrix24/new/master/diagrams/sequence/SequenceLoad.png)
   
 ### 3. Просмотр общей статистики<a name="3"></a>
 ![Просмотр общей статистики](https://github.com/kirillEvstrat/statisticsAppForBitrix24/new/master/diagrams/sequence/SequenceStat.png)
