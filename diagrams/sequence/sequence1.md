@@ -9,7 +9,7 @@
 ![Войти в приложение](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/diagrams/sequence/SuquenceAuth.png)
 
 ### 2 Загрузка статистики <a name="2"></a>
-![Загрузка статистики](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/diagrams/sequence/SequenceLoad.png)
+![Загрузка статистики](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/diagrams/sequence/sequenceLoad.png)
   
 ### 3. Просмотр общей статистики<a name="3"></a>
 ![Просмотр общей статистики](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/diagrams/sequence/SequenceStat.png)
