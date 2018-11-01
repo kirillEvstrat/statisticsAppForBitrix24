@@ -5,5 +5,8 @@
 ### UseCase diagram: ([Ru](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/diagrams/useCase1.md))
 ### Activity diagrams: ([Ru](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/diagrams/activity/activity.md))
 ### Sequence diagrams: ([Ru](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/diagrams/sequence/sequence1.md))
+### Setate diagrams: ([Ru](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/diagrams/state/state.md))
+### Class diagram: ([Ru](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/diagrams/class.png))
+### Deployment diagrams: ([Ru](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/diagrams/deployment.png))
 
 
