@@ -5,6 +5,6 @@
 
 
 ### 1. Загрузка и просмотр общей статистики<a name="1"></a>
-![Загрузка и просмотр общей статистики](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/diagrams/state/state.png)
+![Загрузка и просмотр общей статистики](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/diagrams/state/state2.png)
 ### 1. Просмотр статистики сотрудника<a name="1"></a>
-![Просмотр статистики сотрудника](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/diagrams/state/state2.png)
+![Просмотр статистики сотрудника](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/diagrams/state/state1.png)
