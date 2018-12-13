@@ -1,8 +1,11 @@
 import {Charts} from 'Charts'
+import {CalculateStatistics} from "./CalculateStatistics";
+import {Table} from "./Table";
 
 jQuery(function($) {
     const charts = new Charts();
-    let allStatistics = [], complexStatistics = [], lastNames = []; //allstat - хранится вся статистика(не изменять этот массив!)
+    const _calculator = new CalculateStatistics();
+    let allStatistics = {}, complexStatistics = {}, lastNames = []; //allstat - хранится вся статистика(не изменять этот массив!)
     let monthGlobal, yearGlobal;
     let isCalendarUsed = false;
     let isRegionalDepartment = false;
@@ -18,7 +21,7 @@ jQuery(function($) {
             null,
             function (event, month, year, misc) {
                 if (event === "ok") {
-                    charts.deleteCommonTable();
+                    Table.delete();
                     let now = new Date();
 
                     if (year < 2018 || (year === 2018 && month < 6)) {
@@ -59,8 +62,8 @@ jQuery(function($) {
                     complexStatistics = msg;
                     console.dir(msg);
                     $('#download-statistics').addClass('active');
-                    lastNames = charts.generateLastNames(complexStatistics);
-                    charts.autocomplete(lastNames);
+                    lastNames = _calculator.getLastNames(complexStatistics);
+                    autocomplete(lastNames);
                     $('.windows8').addClass('hide');
                     $('#alerts').html('<div class="alert alert-success alert-dismissable">\n' +
                         '\t\t<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>\n' +
@@ -69,7 +72,7 @@ jQuery(function($) {
                     if ($('#general-statistics').hasClass('active')) {
                         $("#choose-workerWrapper").addClass("hide");
                         $("#calendar-wrapper").removeClass("hide");
-                        charts.makeCommonCharts(allStatistics);
+                        charts.makeCommonCharts(allStatistics, isRegionalDepartment);
                     }
                     else if ($('#workers-statistics').hasClass('active')) {
                         $("#choose-workerWrapper").removeClass("hide");
@@ -102,7 +105,7 @@ jQuery(function($) {
                 $("#choose-workerWrapper").addClass("hide");
                 $("#calendar-wrapper").removeClass("hide");
                 charts.deleteCharts(); //delete  charts
-                charts.makeCommonCharts(allStatistics);
+                charts.makeCommonCharts(allStatistics, isRegionalDepartment);
             }
 
 
@@ -120,7 +123,7 @@ jQuery(function($) {
             yearGlobal = null;
             monthGlobal = null;
             charts.deleteCharts(); //delete  charts
-            charts.makeCommonCharts(complexStatistics);
+            charts.makeCommonCharts(complexStatistics, isRegionalDepartment);
         });
 
         $('#selectDepartment').change(function (e) {
@@ -145,7 +148,7 @@ jQuery(function($) {
 
                                 result.push(Number(id));
                                 if (departments[key][id]['parent'] == 251) { //региональный офис
-                                    //regionalDepartmentCounter++;
+
                                     isRegionalDepartment = true;
                                 }
                                 else {
@@ -154,16 +157,32 @@ jQuery(function($) {
                             }
                         });
                     });
-                    complexStatistics = charts.selectStatistics(result); //отсеить  пользователей только из нужных департаментов
+                    complexStatistics = this._calculator.selectStatisticsOfDepartment(result, allStatistics); //отсеить  пользователей только из нужных департаментов
                     if (isCalendarUsed === true) {
-                        charts.deleteCommonTable();
+                        Table.delete();
                         charts.monthChartsWrapper(complexStatistics, monthGlobal, yearGlobal);
                     }
                     else {
-                        charts.makeCommonCharts(complexStatistics);
+                        charts.makeCommonCharts(complexStatistics, isRegionalDepartment);
                     }
                  }
             });
         });
     });
+    ////END Document.ready///
+   function autocomplete(lastNames) {
+       $( "#tags" ).autocomplete({
+            source: lastNames
+        });
+    }
+
+
+
 });
+
+
+
+
+
+
+
