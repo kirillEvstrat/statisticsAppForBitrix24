@@ -14,9 +14,8 @@
 выделены private свойства _thead, _tbody,  т.к они используются только внутри класса Table
 [Table.js](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/code/js/Table.js)
 * Выделение локальной переменной (Extract Local Variable)
-
+[calculate.js] (https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/code/js/CalculateStatistics.js) в методе commonCharts, workersCharts - выделены локальные переменные results для работы внутри метода.
 * Выделение метода (Extract Method)
-[calculate.js](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/code/js/CalculateStatistics.js) в методе commonCharts, workersCharts - выделены локальные переменные results для работы внутри метода.
 из метода  makeMonthGeneralTable выделены методы setTbody, addCells
 [Table.js](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/code/js/Table.js).
 в RenderCharts.js(https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/code/js/RenderCharts.js) выделены методы columnChart, roundChart, [ранее(стр 170, 240)](https://github.com/kirillEvstrat/statisticsAppForBitrix24/commit/76b076ad9ae66e04ce9e2c35130674365342e8e7) было повторное использование этого кода в разных участках приложения.
