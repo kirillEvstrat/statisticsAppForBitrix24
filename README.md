@@ -10,5 +10,6 @@
 ### Deployment diagram: ([Ru](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/diagrams/deployment.png))
 ### Test plan: ([Ru](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/documentation/testPlan.md))
 ### Test results: ([Ru](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/documentation/testResult.md))
+### Refactoring results: ([Ru](https://github.com/kirillEvstrat/statisticsAppForBitrix24/blob/master/documentation/refactoring.md))
 
 
